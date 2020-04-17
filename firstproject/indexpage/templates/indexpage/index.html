@@ -1,0 +1,20 @@
+{% extends 'indexpage/base.html' %}
+
+{% block title %}
+    Index Page
+{% endblock %}
+
+
+{% block body %}
+    <h1>Hello Index Page</h1>
+    <div>{% lorem %}</div>
+<hr>
+<br>
+<b>{{ spam }}</b>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="submit">
+</form>
+
+{% endblock %}
